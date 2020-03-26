@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if(UNITY_EDITOR)
+using UnityEngine.SceneManagement;
+#endif
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
@@ -74,6 +77,11 @@ public class PlayerController : MonoBehaviour
 			movement = Vector3.zero;
 		}
 
+		#if (UNITY_EDITOR)
+			if(Input.GetKeyDown(KeyCode.R)) {
+				 SceneManager.LoadScene("TestingScene", LoadSceneMode.Single);
+			}
+		#endif
     }
 
     private void FixedUpdate()

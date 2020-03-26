@@ -30,7 +30,18 @@ public class ShoppingListManager : MonoBehaviour
             GameObject item = items[i];
             item.transform.SetParent(verticalLayoutGroup.transform);
             item.GetComponent<Toggle>().isOn = false;
-            item.GetComponentInChildren<Text>().text = x.ItemName + "(" + x.currentAmount + "/" + x.ItemAmount + ")";
+            item.GetComponentInChildren<Text>().text = x.ItemName + " (" + x.currentAmount + "/" + x.ItemAmount + ")";
+        }
+    }
+
+    public void itemCollected(string name)
+    {
+        for(int i = 0; i < items.GetLength(0); i++) {
+            ShoppingListItem x = shoppingListItems[i];
+            if(x.ItemName.Equals(name)) {
+                x.currentAmount++;
+                updateItems();
+            }
         }
     }
 }
