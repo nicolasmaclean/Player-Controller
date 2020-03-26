@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scipts\CharacterAnimator.cs" />
      <Compile Include="Assets\Scipts\FPSCameraController.cs" />
      <Compile Include="Assets\Scipts\PlayerController.cs" />
+     <Compile Include="Assets\Scipts\ShoppingListItem.cs" />
+     <Compile Include="Assets\Scipts\ShoppingListManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/nicol/Documents/GitHub/Player-Controller/Player Controller/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
