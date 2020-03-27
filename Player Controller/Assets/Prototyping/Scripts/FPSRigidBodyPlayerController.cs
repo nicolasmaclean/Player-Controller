@@ -1,12 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-#if(UNITY_EDITOR)
-using UnityEngine.SceneManagement;
-#endif
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+public class FPSRigidBodyPlayerController : MonoBehaviour
 {
 
     public float moveSpeed = 35f;
@@ -76,12 +73,6 @@ public class PlayerController : MonoBehaviour
 			rigidBody.velocity = Vector3.zero;
 			movement = Vector3.zero;
 		}
-
-		#if (UNITY_EDITOR)
-			if(Input.GetKeyDown(KeyCode.R)) {
-				 SceneManager.LoadScene("TestingScene", LoadSceneMode.Single);
-			}
-		#endif
     }
 
     private void FixedUpdate()

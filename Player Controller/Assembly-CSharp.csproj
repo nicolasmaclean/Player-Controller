@@ -45,12 +45,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scipts\CharacterAnimator.cs" />
-     <Compile Include="Assets\Scipts\FPSCameraController.cs" />
-     <Compile Include="Assets\Scipts\Item.cs" />
-     <Compile Include="Assets\Scipts\PlayerController.cs" />
-     <Compile Include="Assets\Scipts\ShoppingListItem.cs" />
-     <Compile Include="Assets\Scipts\ShoppingListManager.cs" />
+     <Compile Include="Assets\Prototyping\Scripts\FPSRigidBodyCameraController.cs" />
+     <Compile Include="Assets\Prototyping\Scripts\FPSRigidBodyPlayerController.cs" />
+     <Compile Include="Assets\Scripts\CharacterAnimator.cs" />
+     <Compile Include="Assets\Scripts\FPSCameraController.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ShoppingListItem.cs" />
+     <Compile Include="Assets\Scripts\ShoppingListManager.cs" />
+     <None Include="Assets\ReadMe.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/nicol/Documents/GitHub/Player-Controller/Player Controller/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
