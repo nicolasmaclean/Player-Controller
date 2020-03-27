@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 	public Collider CrouchingHitbox;
     
     Vector3 _inputVector;
-    bool _isGrounded = true;
+    public bool _isGrounded = true;
 	Rigidbody rigidBody;
 	float heightCheck;
 	Vector3 movement;
