@@ -49,6 +49,8 @@
      <Compile Include="Assets\Prototyping\Scripts\FPSRigidBodyPlayerController.cs" />
      <Compile Include="Assets\Scripts\CharacterAnimator.cs" />
      <Compile Include="Assets\Scripts\FPSCameraController.cs" />
+     <Compile Include="Assets\Scripts\Helper Scripts\Array.cs" />
+     <Compile Include="Assets\Scripts\Helper Scripts\ArrayEditor.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ShoppingListItem.cs" />
