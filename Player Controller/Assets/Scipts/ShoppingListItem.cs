@@ -7,6 +7,5 @@ public class ShoppingListItem
 {
     public string ItemName;
     public int ItemAmount;
-    public int currentAmount;
-    public int ScoreReward;
+    public int currentAmount = 0;
 }
